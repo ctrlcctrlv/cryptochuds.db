@@ -1,0 +1,122 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "trust": {
+      "type": "string"
+    },
+    "length": {
+      "type": "string"
+    },
+    "algo": {
+      "type": "string"
+    },
+    "keyid": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "expires": {
+      "type": "string"
+    },
+    "dummy": {
+      "type": "string"
+    },
+    "ownertrust": {
+      "type": "string"
+    },
+    "sig": {
+      "type": "string"
+    },
+    "cap": {
+      "type": "string"
+    },
+    "issuer": {
+      "type": "string"
+    },
+    "flag": {
+      "type": "string"
+    },
+    "token": {
+      "type": "string"
+    },
+    "hash": {
+      "type": "string"
+    },
+    "curve": {
+      "type": "string"
+    },
+    "compliance": {
+      "type": "string"
+    },
+    "updated": {
+      "type": "string"
+    },
+    "origin": {
+      "type": "string"
+    },
+    "keygrip": {
+      "type": "string"
+    },
+    "fingerprint": {
+      "type": "string"
+    },
+    "uids": {
+      "$ref": "#/definitions/uids"
+    }
+  },
+  "definitions": {
+    "uids": {
+      "type": ["null", "object"],
+      "patternProperties": {
+        "[0-9]+": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "name": {
+              "type": "string"
+            },
+            "location": {
+              "type": [
+                "null",
+                "string"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "algo",
+    "cap",
+    "compliance",
+    "curve",
+    "date",
+    "dummy",
+    "expires",
+    "fingerprint",
+    "flag",
+    "hash",
+    "issuer",
+    "keygrip",
+    "keyid",
+    "length",
+    "origin",
+    "ownertrust",
+    "sig",
+    "token",
+    "trust",
+    "type",
+    "updated"
+  ]
+}
